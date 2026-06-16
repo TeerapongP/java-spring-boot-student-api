@@ -8,8 +8,6 @@ Starter project สำหรับสอน **Backend Development with Java Spri
 Course -> CourseModule -> Lesson -> ExamRoomBooking
 ```
 
-ไฟล์ส่วนใหญ่ใน commit แรกตั้งใจให้เป็นไฟล์เปล่า เพื่อให้ผู้สอนค่อย ๆ เติม code ระหว่างสอน ไม่ใช่ให้ผู้เรียนเปิดมาเจอเฉลยทั้งหมดตั้งแต่ต้น
-
 ## Tech Stack
 
 - Java 26
