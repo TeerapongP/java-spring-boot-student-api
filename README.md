@@ -82,17 +82,3 @@ Lesson 1:N ExamRoomBooking
 8. เติม Controller endpoints
 9. เติม Exception Handling
 10. ทดสอบ API ด้วย Postman หรือ Bruno
-
-## MySQL Setup
-
-```sql
-CREATE DATABASE course_api;
-```
-
-## Run
-
-```bash
-export JAVA_HOME=$(/usr/libexec/java_home -v 26)
-export PATH="$JAVA_HOME/bin:$PATH"
-./mvnw spring-boot:run
-```
