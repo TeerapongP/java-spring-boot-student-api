@@ -40,30 +40,11 @@ src/main/java/com/avb/courseapi/
 ├── config/
 ├── controller/
 │   ├── CourseController.java
-│   ├── request/
-│   │   ├── CreateCourseRequest.java
-│   │   ├── CreateCourseModuleRequest.java
-│   │   ├── CreateLessonRequest.java
-│   │   └── CreateExamRoomBookingRequest.java
-│   └── response/
-│       ├── CourseResponse.java
-│       ├── CourseModuleResponse.java
-│       ├── LessonResponse.java
-│       ├── ExamRoomBookingResponse.java
-│       └── ErrorResponse.java
 ├── exception/
-│   ├── GlobalExceptionHandler.java
-│   ├── ResourceNotFoundException.java
-│   └── ValidationException.java
 ├── model/
 │   ├── ContentStatus.java
 │   └── ExamBookingStatus.java
 ├── outbound/
-│   └── repository/
-│       ├── CourseRepository.java
-│       ├── CourseModuleRepository.java
-│       ├── LessonRepository.java
-│       ├── ExamRoomBookingRepository.java
 │       └── entity/
 │           ├── Course.java
 │           ├── CourseModule.java
@@ -71,7 +52,6 @@ src/main/java/com/avb/courseapi/
 │           └── ExamRoomBooking.java
 ├── security/
 ├── services/
-│   └── CourseService.java
 └── util/
 ```
 
