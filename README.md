@@ -8,8 +8,6 @@ Starter project สำหรับสอน **Backend Development with Java Spri
 Course -> CourseModule -> Lesson -> ExamRoomBooking
 ```
 
-ไฟล์ส่วนใหญ่ใน commit แรกตั้งใจให้เป็นไฟล์เปล่า เพื่อให้ผู้สอนค่อย ๆ เติม code ระหว่างสอน ไม่ใช่ให้ผู้เรียนเปิดมาเจอเฉลยทั้งหมดตั้งแต่ต้น
-
 ## Tech Stack
 
 - Java 26
@@ -40,30 +38,11 @@ src/main/java/com/avb/courseapi/
 ├── config/
 ├── controller/
 │   ├── CourseController.java
-│   ├── request/
-│   │   ├── CreateCourseRequest.java
-│   │   ├── CreateCourseModuleRequest.java
-│   │   ├── CreateLessonRequest.java
-│   │   └── CreateExamRoomBookingRequest.java
-│   └── response/
-│       ├── CourseResponse.java
-│       ├── CourseModuleResponse.java
-│       ├── LessonResponse.java
-│       ├── ExamRoomBookingResponse.java
-│       └── ErrorResponse.java
 ├── exception/
-│   ├── GlobalExceptionHandler.java
-│   ├── ResourceNotFoundException.java
-│   └── ValidationException.java
 ├── model/
 │   ├── ContentStatus.java
 │   └── ExamBookingStatus.java
 ├── outbound/
-│   └── repository/
-│       ├── CourseRepository.java
-│       ├── CourseModuleRepository.java
-│       ├── LessonRepository.java
-│       ├── ExamRoomBookingRepository.java
 │       └── entity/
 │           ├── Course.java
 │           ├── CourseModule.java
@@ -71,7 +50,6 @@ src/main/java/com/avb/courseapi/
 │           └── ExamRoomBooking.java
 ├── security/
 ├── services/
-│   └── CourseService.java
 └── util/
 ```
 
@@ -104,17 +82,3 @@ Lesson 1:N ExamRoomBooking
 8. เติม Controller endpoints
 9. เติม Exception Handling
 10. ทดสอบ API ด้วย Postman หรือ Bruno
-
-## MySQL Setup
-
-```sql
-CREATE DATABASE course_api;
-```
-
-## Run
-
-```bash
-export JAVA_HOME=$(/usr/libexec/java_home -v 26)
-export PATH="$JAVA_HOME/bin:$PATH"
-./mvnw spring-boot:run
-```

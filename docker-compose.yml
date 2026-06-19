@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: course-curriculum-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: course_curriculum
+    ports:
+      - "3306:3306"
+    volumes:
+      - course-curriculum-mysql-data:/var/lib/mysql
+
+volumes:
+  course-curriculum-mysql-data:
