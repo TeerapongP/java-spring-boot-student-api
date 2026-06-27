@@ -82,3 +82,17 @@ Lesson 1:N ExamRoomBooking
 8. เติม Controller endpoints
 9. เติม Exception Handling
 10. ทดสอบ API ด้วย Postman หรือ Bruno
+
+## Auto Increment ID Note
+
+`Course.id` ใช้ `Long` และ `GenerationType.IDENTITY` เพื่อให้ MySQL สร้างค่า auto increment ตอน insert.
+
+เวลาเรียก `POST /courses/createCourse` ไม่ต้องส่ง `id` ใน request body:
+
+```json
+{
+  "code": "JAVA-101",
+  "title": "Java Spring Boot",
+  "description": "Backend API workshop"
+}
+```
