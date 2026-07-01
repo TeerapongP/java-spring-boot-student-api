@@ -6,7 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: course_curriculum
     ports:
-      - "3306:3306"
+      - "8888:3306"
     volumes:
       - course-curriculum-mysql-data:/var/lib/mysql
 
